@@ -2,18 +2,6 @@
   "name": "Weather app",
   "short_name": "Weather",
     "icons": [{
-        "src": "./images/icon32.png",
-        "sizes": "32x32",
-        "type": "image/png"
-      }, {
-        "src": "./images/icon256.png",
-        "sizes": "256x256",
-        "type": "image/png"
-      }, {
-        "src": "./images/icon512.png",
-        "sizes": "512x512",
-        "type": "image/png"
-      }, {
         "src": "./images/icon1024.png",
         "sizes": "1024x1024",
         "type": "image/png"
