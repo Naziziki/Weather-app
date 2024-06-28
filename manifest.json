@@ -2,9 +2,7 @@
   "name": "Weather app",
   "short_name": "Weather",
     "icons": [{
-        "src": "./images/icon1024.png",
-        "sizes": "1024x1024",
-        "type": "image/png"
+        "src": "./images/icon1024.png"
       }],
   "start_url": "https://naziziki.github.io/Weather-app/",
   "display": "fullscreen",
