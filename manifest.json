@@ -8,6 +8,5 @@
       }],
   "start_url": "https://naziziki.github.io/Weather-app/",
   "display": "fullscreen",
-  "background_color": "#19323c",
-  "theme_color": "#19323c"
+  "background_color": "#19323c"
 }
