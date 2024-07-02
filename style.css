@@ -19,9 +19,6 @@ body {
 }
 
 .container {
-  /* display: flex;
-  justify-content: center;
-  flex-direction: column; */
   position: relative;
   overflow: hidden;
 
@@ -29,7 +26,9 @@ body {
   border-radius: 30px;
   background-color: #f3f7f0;
   height: 90px;
-  transition: 1s ease-out;
+  transition: 0.5s ease-out;
+  size: 0;
+  opacity: 0;
 }
 
 .search-box {
@@ -37,7 +36,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-bottom: 10px;
+  /* padding-bottom: 10px; */
 }
 
 .search-box input {
@@ -57,7 +56,7 @@ body {
   color: #19323c;
   background-color: #b7d5e1;
   cursor: pointer;
-  transition: 0.4s ease;
+  /* transition: 0.4s ease; */
 }
 
 .search-box button:hover {
@@ -73,6 +72,7 @@ body {
 .not-found {
   /* display: flex; */
   justify-content: center;
+  padding-top: 8px;
   flex-direction: column;
   scale: 0;
   opacity: 0;
@@ -117,7 +117,11 @@ body {
 .weather-box .description {
   font-size: 27px;
 }
+.weather-box .description::first-letter {
+  text-transform: uppercase;
+}
 
+/* WEATHER DETAILS  */
 .weather-details {
   display: flex;
   justify-content: space-between;
@@ -129,18 +133,54 @@ body {
 
 .weather-details p {
   font-size: 17px;
-  /* text-align: center; */
+  text-align: center;
 }
 
 .humidity,
 .wind-speed {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   gap: 10px;
-  /* flex-direction: column; */
 }
 
+/* SHOW MORE */
+.feelsLike-temp {
+  display: none;
+}
+.showMore-container {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  padding-top: 10px;
+  transition: 0.5s ease;
+}
+.showMore-container .showMore-weatherDetails {
+  display: none;
+  justify-content: space-between;
+}
+
+.showMore-container .showMore-weatherDetails i {
+  font-size: 30px;
+  color: black;
+}
+.showMore-container .showMore-weatherDetails p {
+  font-size: 17px;
+  text-align: center;
+}
+.wind-deg,
+.wind-gust {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.showMore-container button {
+  padding-top: 0px;
+  font-size: 16px;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* ANIMATION  */
 .weather-details,
 .weather-box {
   scale: 0;
@@ -148,8 +188,8 @@ body {
 }
 
 .fadeIn {
-  animation: 0.5s fadeIn forwards;
-  animation-delay: 0.5s;
+  animation: 0.3s fadeIn forwards;
+  animation-delay: 0.3s;
 }
 
 @keyframes fadeIn {

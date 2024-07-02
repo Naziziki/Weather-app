@@ -4,7 +4,6 @@
     "icons": [{
         "src": "./images/icon1024.png"
       }],
-  "start_url": "https://naziziki.github.io/Weather-app/",
   "display": "fullscreen",
   "background_color": "#19323c"
 }

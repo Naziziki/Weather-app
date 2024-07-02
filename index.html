@@ -16,8 +16,8 @@
     />
   </head>
   <body>
-    <!-- SERACH-BOX -->
-    <div class="container">
+    <div class="container fadeIn">
+      <!-- SERACH-BOX -->
       <div class="search-box">
         <i class="fa-solid fa-location-dot"></i>
         <input type="text" placeholder="Enter your location" />
@@ -37,6 +37,7 @@
           <p class="temp-degrees"></p>
           <p class="temp-c">°C</p>
         </div>
+        <div class="feelsLike-temp"></div>
         <p class="description"></p>
       </div>
 
@@ -49,12 +50,33 @@
           </div>
         </div>
         <div class="wind-speed">
-          <i class="fa-solid fa-wind"></i>
           <div class="text">
             <p></p>
             <p>Wind-speed</p>
           </div>
+          <i class="fa-solid fa-wind"></i>
         </div>
+      </div>
+
+      <!-- SHOW-MORE -->
+      <div class="showMore-container">
+        <div class="showMore-weatherDetails hide">
+          <div class="wind-deg">
+            <i class="fa-regular fa-compass"></i>
+            <div class="text">
+              <p></p>
+              <p>Wind-deg</p>
+            </div>
+          </div>
+          <div class="wind-gust">
+            <div class="text">
+              <p></p>
+              <p>Wind-gust</p>
+            </div>
+            <i class="fa-solid fa-wind"></i>
+          </div>
+        </div>
+        <button>show more</button>
       </div>
     </div>
 
