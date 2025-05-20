@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather-app</title>
-    <link rel="icon" href="./images/icon.png" type="image/x-icon" />
+    <link rel="icon" href="./images/icon256.png" type="image/png" />
     <link rel="manifest" href="manifest.json" />
     <link rel="stylesheet" href="style.css" />
 
@@ -19,10 +19,42 @@
     <div class="container fadeIn">
       <!-- SERACH-BOX -->
       <div class="search-box">
-        <i class="fa-solid fa-location-dot"></i>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-map-pin-icon lucide-map-pin"
+        >
+          <path
+            d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+          />
+          <circle cx="12" cy="10" r="3" />
+        </svg>
+
         <input type="text" placeholder="Enter your location" />
+
         <button>
-          <i class="fa-solid fa-magnifying-glass"></i>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="3"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-search-icon lucide-search"
+          >
+            <path d="m21 21-4.34-4.34" />
+            <circle cx="11" cy="11" r="8" />
+          </svg>
         </button>
       </div>
 
@@ -43,7 +75,11 @@
 
       <div class="weather-details">
         <div class="humidity">
-          <i class="fa-solid fa-water"></i>
+          <img
+            src="/images/humidity.svg"
+            alt="Humidity icon"
+            class="detail-icon"
+          />
           <div class="text">
             <p></p>
             <p>Humidity</p>
@@ -54,7 +90,11 @@
             <p></p>
             <p>Wind-speed</p>
           </div>
-          <i class="fa-solid fa-wind"></i>
+          <img
+            src="/images/wind.svg"
+            alt="Wind-speed icon"
+            class="detail-icon"
+          />
         </div>
       </div>
 
@@ -62,7 +102,11 @@
       <div class="showMore-container">
         <div class="showMore-weatherDetails hide">
           <div class="wind-deg">
-            <i class="fa-regular fa-compass"></i>
+            <img
+              src="/images/wind-deg.svg"
+              alt="Wind direction icon"
+              class="detail-icon"
+            />
             <div class="text">
               <p></p>
               <p>Wind-deg</p>
@@ -73,7 +117,11 @@
               <p></p>
               <p>Wind-gust</p>
             </div>
-            <i class="fa-solid fa-wind"></i>
+            <img
+              src="/images/wind-gust.svg"
+              alt="Wind gust icon"
+              class="detail-icon"
+            />
           </div>
         </div>
         <button>show more</button>
@@ -81,10 +129,6 @@
     </div>
 
     <!-- script -->
-    <script
-      src="https://kit.fontawesome.com/7c8801c017.js"
-      crossorigin="anonymous"
-    ></script>
     <script src="./index.js"></script>
   </body>
 </html>

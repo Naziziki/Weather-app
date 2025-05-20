@@ -20,6 +20,7 @@ search.addEventListener('click', function searchFunction() {
         .then(response => response.json())
         .then(json => {
 
+            // Обробка отриманих даних та оновлення інтерфейсу
             console.log(JSON.stringify(json, null, 2));
 
             if (json.cod === '404') {
@@ -109,13 +110,4 @@ search.addEventListener('click', function searchFunction() {
         });
 });
 
-// const input = document.getElementById('.search-box input');
-// input.addEventListener('keydown', function(event) {
-//   // If the user presses the "Enter" key on the keyboard
-//   if (event.key === 13) {
-//     // Cancel the default action, if needed
-//     // event.preventDefault();
-//     // Trigger the button element with a click
-//     search.click();
-//   }
-// });
+
